@@ -159,19 +159,7 @@
         </div>
     </div>
 
-    <div id="bypassContainer">
-        <div class="error-card">
-            <div class="error-icon">🚫</div>
-            <div class="error-title">Bypass Detected!</div>
-            <p style="color:#888; font-size: 14px; line-height: 1.5;">Direct access is prohibited. Please use the official link from the script to generate your key.</p>
-            <button class="btn btn-red" onclick="location.href='steps.html'">RETURN TO STEPS</button>
-        </div>
-    </div>
-
-    <div class="footer">MOSKO SYSTEM SECURE</div>
-</div>
-
-<script>
+    <script>
     async function checkSecurity() {
         const urlParams = new URLSearchParams(window.location.search);
         const source = urlParams.get('source');
